@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simon game</title>
+    <link rel="stylesheet" href="files/style.css">
+</head>
+
+<body>
+    <div id="startPge">
+        <div>
+            <h1>Click to start SAIMON GAME</h1>
+            <button id="btnStart">Start</button>
+        </div>
+    </div>
+    <div id="container">
+        <div>
+            <h1>Simon-Game</h1>
+            <h1>Your level : <span class="lvlId">0</span> </h1>
+            <div id="btnContn">
+                <button id="red">Red</button>
+                <button id="green">Green</button>
+                <br />
+                <button id="blue">Blue</button>
+                <button id="yellow">Yellow</button>
+            </div>
+        </div>
+    </div>
+    <div id="resetPge">
+        <h1>LOSE !!!</h1>
+        <!--  <br>
+        your was : <span id="pPtern"></span>
+        <br>
+        Wrong click is : <span id="wrgclk"></span> instead of <span id="ioc"></span> -->
+        <h3>The pattern was: <span id="gPtern"></span> <br>
+            your was : <span id="pPtern"></span>
+        </h3>
+        <h1>Your level : <span class="lvlId">0</span> </h1>
+        <h2>Click Reset to restart the game</h2>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+
+
+    <script src="files/main.js"></script>
+</body>
+
+</html>

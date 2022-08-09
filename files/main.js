@@ -112,12 +112,12 @@ window.onload = () => {
         }
 
         // showing player pattern
-        console.log(pPtern)
-        if (pPtern.length > 4) {
-            document.getElementById("pPtern").innerText = ".... , " + pPtern[pPtern.length - 4] + ", " + pPtern[pPtern.length - 3] + ", " + pPtern[pPtern.length - 2] + ", " + pPtern[pPtern.length - 1];
-        } else {
-            document.getElementById("pPtern").innerText = pPtern;
-        }
+        //console.log(pPtern)
+        //if (pPtern.length > 4) {
+        //    document.getElementById("pPtern").innerText = ".... , " + pPtern[pPtern.length - 4] + ", " + pPtern[pPtern.length - 3] + ", " + pPtern[pPtern.length - 2] + ", " + pPtern[pPtern.length - 1];
+        //} else {
+        //    document.getElementById("pPtern").innerText = pPtern;
+        //}
 
         // document.getElementById("wrgclk").innerText = wrongClik;
         // document.getElementById("ioc").innerText = rndp[(rndp.length-1)-(pPtern.length - 1)];

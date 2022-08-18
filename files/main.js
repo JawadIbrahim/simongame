@@ -113,7 +113,7 @@ window.onload = () => {
         // showing player pattern
         console.log(pPtern)
         if (pPtern.length > 3) {
-            document.getElementById("pPtern").innerText = ".... , " + pPtern[pPtern.length - 3] + ", " + pPtern[pPtern.length - 2] + ", "+ pPtern[pPtern.length - 1];
+            document.getElementById("pPtern").innerText = ".... , " + pPtern[pPtern.length - 3] + ", " + pPtern[pPtern.length - 2] + ", " + pPtern[pPtern.length - 1];
         } else {
             document.getElementById("pPtern").innerText = pPtern;
         }

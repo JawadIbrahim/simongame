@@ -5,32 +5,48 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* #btnContn button:hover {
+    transform: translate(-3px, 2px);
+} */
+
 /* Start Page */
 #startPge {
     display: grid;
     place-items: center;
     background-color: antiquewhite;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: absolute;
+    font-size: 1.7rem;
 }
-#htp h3{
+
+#startPge div {
+    text-align: center;
+}
+
+#hwtoply h3 {
     width: 90vw;
     text-align: justify;
 }
-#htp h4 span{
-    color: green;
-    text-decoration: underline;
 
+#hwtoply h4 span {
+    text-decoration: underline;
+    color: green;
+    font-style: italic;
 }
+
 #startPge div {
     display: grid;
     place-items: center;
 }
 
+#startPge div h1 {
+    font-size: 1.8em;
+}
+
 #btnStart {
-    width: 150px;
-    height: 70px;
+    width: 15vw;
+    height: 3vh;
 }
 
 .strtpgAnim {
@@ -56,24 +72,23 @@
 
 #container {
     height: 100vh;
+    width: 100vw;
     display: grid;
     place-items: center;
+    padding-bottom: 15vh;
 }
 
-#btnContn {
-    margin-bottom: 20vh;
-}
-
-#container h1 {
+#container div h1 {
     text-align: center;
+    font-size: 4rem;
 }
 
 #btnContn button {
+    height: 15vh;
+    width: 35vw;
     margin: 10px;
-    width: 200px;
-    height: 120px;
     box-shadow: 5px 5px gray;
-    font-size: larger;
+    font-size: 3rem;
 }
 
 #red {
@@ -92,6 +107,10 @@
     background-color: rgb(204, 204, 92);
 }
 
+.blinkAnim {
+    animation: blink 0.7s ease-in;
+}
+
 @keyframes blink {
     0% {
         opacity: 0;
@@ -102,22 +121,18 @@
     }
 }
 
-.blinkAnim {
-    animation: blink 0.7s ease-in;
-}
-.onclik{
+
+.onclik {
     animation: onclik 0.1s ease-out;
 }
+
 @keyframes onclik {
     0% {
-        width: 200px;
-        height: 120px;
+        transform: scale(1);
     }
 
     100% {
-        margin: 20px;
-        width: 180px;
-        height: 100px;
+        transform: scale(0.8);
     }
 }
 
@@ -132,11 +147,63 @@
     height: 100vh;
     position: absolute;
     top: 0;
+    font-size: 2rem;
+}
+
+#resetPge h1,
+#resetPge h2,
+#resetPge h3 {
+    text-align: center;
 }
 
 #resetPge button {
-    margin: 10px;
-    width: 120px;
-    height: 60px;
-    font-size: larger;
+    height: 10vh;
+    width: 40vw;
+    border-radius: 50px;
+    margin: 20px;
+    font-size: 3rem;
+}
+
+@media screen and (min-width:600px) {
+    #startPge {
+        font-size: 1rem;
+    }
+
+    #btnStart {
+        width: 15vw;
+        height: 10vh;
+    }
+
+    #container div h1 {
+        font-size: 2rem;
+    }
+
+    #btnContn button {
+        height: 25vh;
+        width: 30vw;
+        margin: 15px;
+        box-shadow: 10px 10px gray;
+        font-size: 2rem;
+    }
+
+    #resetPge {
+        font-size: 1rem;
+    }
+
+    #resetPge button {
+        height: 10vh;
+        width: 30vw;
+        border-radius: 50px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    #btnContn button {
+        height: 25vh;
+        width: 22vw;
+        margin: 15px;
+        box-shadow: 10px 10px gray;
+        font-size: 1.5rem;
+    }
 }
